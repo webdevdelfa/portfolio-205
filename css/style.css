@@ -65,6 +65,51 @@ h3 {
   font-weight: 500;
   font-size: 20px;
 }
+
+.header__burger {
+  width: 30px;
+  height: 20px;
+  display: none;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.header__burger-el {
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: relative;
+}
+
+.header__burger-el::before,
+.header__burger-el::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: absolute;
+}
+
+.header__burger-el::before {
+  top: -9px;
+}
+
+.header__burger-el::after {
+  bottom: -9px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-top: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+}
+
 .title {
   font-style: normal;
   font-weight: bold;
@@ -129,4 +174,40 @@ h3 {
 .recent-posts__separator {
   margin-right: 26px;
   margin-left: 26px;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  height: 30px;
+  width: 30px;
+  margin-right: 35px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social__link {
+  display: block;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.social_fb {
+  background-image: url(../img/social/fb.png);
+}
+
+.social_insta {
+  background-image: url(../img/social/insta.png);
+}
+
+.social_twitter {
+  background-image: url(../img/social/twitter.png);
+}
+
+.social_in {
+  background-image: url(../img/social/Linkedin.png);
 }
