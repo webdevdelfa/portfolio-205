@@ -37,6 +37,12 @@ h3 {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 .header {
@@ -258,8 +264,9 @@ h3 {
   .work {
     padding: 0px 0px 20px;
     flex-direction: column;
-    width: 100%;
+    max-width: 339px;
     flex-shrink: 0;
+    margin: 0px 13px;
   }
   .work__img-wrap {
     max-width: 100%;
@@ -269,42 +276,53 @@ h3 {
   }
 }
 
+/* Стили для Blog*/
+
+/* Стили для footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 51px 0px 54px;
+}
+
 .social__list {
   display: flex;
 }
 
 .social__item {
-  height: 30px;
-  width: 30px;
   margin-right: 35px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.social__link {
-  display: block;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.social_fb {
-  background-image: url(../img/social/fb.png);
-}
-
-.social_insta {
-  background-image: url(../img/social/insta.png);
-}
-
-.social_twitter {
-  background-image: url(../img/social/twitter.png);
-}
-
-.social_in {
-  background-image: url(../img/social/Linkedin.png);
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
 }
 
 .social__item:last-child {
   margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+}
+
+.vk {
+  background-image: url(../img/social/vk.png);
+}
+
+.ok {
+  background-image: url(../img/social/ok.png);
+}
+
+.github {
+  background-image: url(../img/social/github.png);
+}
+
+.telegram {
+  background-image: url(../img/social/telegram.png);
 }
